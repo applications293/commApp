@@ -13,11 +13,25 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="col" text-center> 
+
+  <ion-fab right bottom>
+      <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab (click)= "logInWithFB()"><ion-icon name="logo-facebook"></ion-icon></button>
+        <button ion-fab (click)="logInWithTwitter()"><ion-icon name="logo-twitter"></ion-icon></button>
+        <button ion-fab (click)= "logInWithGoogle()"><ion-icon name="logo-googleplus"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
+
+ 
+
+  <br> <br> <br> <br> 
+
   <form [formGroup]="todo" >
-               
-    <ion-item >
-      <ion-label floating> <ion-icon name="mail" item-start></ion-icon>Email</ion-label>
+             
+    <ion-item class="daa">
+      <ion-label floating style="color: black"> <ion-icon name="mail" item-start></ion-icon>Email</ion-label>
       <ion-input type= "text" formControlName= "email" [class.error1]="!todo.controls.email.valid && todo.controls.email.dirty"> Email</ion-input>
     </ion-item>
 
@@ -32,8 +46,8 @@
     </ion-item>
   
   
-    <ion-item >
-      <ion-label floating> <ion-icon name="key" item-start></ion-icon> Password</ion-label>
+    <ion-item class="daa">
+      <ion-label floating style="color: black"> <ion-icon name="key" item-start></ion-icon> Password</ion-label>
       
       <ion-input type= "password" formControlName="password"  [class.error1]="!todo.controls.password.valid && todo.controls.password.dirty"> Password</ion-input>
   </ion-item>
@@ -54,7 +68,10 @@
   
         
         <br> <br>
-       <button ion-button (click)="LogIn()">LogIn</button>
+       <button ion-button (click)="LogIn()" block >LogIn</button> <br>
+
+       <!-- <button clear full (click)="ForgotPassword()" id="jav">Forgot Password</button> -->
+        <a  (click)="ForgotPassword()" style="color: black">Forgot Password ?</a>
   
       </form>   
  

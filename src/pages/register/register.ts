@@ -83,7 +83,9 @@ export class RegisterPage {
       console.log("Key "+databaseKey)
       console.log("Key "+uid)
       UserObj.push({role: "user"});
-      this.navCtrl.push(HomePage);
+    
+      this.navCtrl.setRoot(HomePage);
+      
     }
   }
   

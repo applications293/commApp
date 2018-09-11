@@ -1,3 +1,4 @@
+import { MakhePage } from './../pages/makhe/makhe';
 import { SuggestionPage } from './../pages/suggestion/suggestion';
 
 
@@ -7,13 +8,14 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = 'RegisterPage' ;
+  rootPage: any = 'MakhePage';
 
   pages: Array<{title: string, component: any}>;
 

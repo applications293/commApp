@@ -1,3 +1,4 @@
+// import { MakhePage } from './../pages/makhe/makhe';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -17,6 +18,7 @@ import { TextToSpeech } from '@ionic-native/text-to-speech';
   declarations: [
     MyApp,
     HomePage
+  
 
   ],
   imports: [

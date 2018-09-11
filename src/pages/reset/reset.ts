@@ -3,6 +3,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ToastController } from 'ionic-angular';
 
+/**
+ * Generated class for the ResetPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 declare var firebase;
 @IonicPage()
 @Component({
@@ -14,10 +20,7 @@ export class ResetPage {
   private todo : FormGroup;
   email;
   
-  constructor(public navCtrl: NavController, public navParams: NavParams,private formBuilder: FormBuilder,private toastCtrl: ToastController) {
-    // this.todo = this.formBuilder.group({
-    // email: ['', Validators.required],
-    // });
+  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder,private toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
@@ -59,6 +62,7 @@ export class ResetPage {
       toast.present(); 
     });
   }
+
 
 
 }

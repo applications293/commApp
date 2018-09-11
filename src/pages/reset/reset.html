@@ -6,21 +6,24 @@
 -->
 <ion-header>
 
-  <ion-navbar color="primary">
-    <ion-title>Reset</ion-title>
+  <ion-navbar>
+    <ion-title>reset</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="col">
 
-    
-    <ion-item class="dev">
-        <ion-label>Email</ion-label>
-        <ion-input type= "text" [(ngModel)]="email" >email</ion-input>
-      </ion-item>
-     <br> <br>
+  <br> <br> <br> <br> 
+  
+  <ion-item class="daa">
+      <ion-label floating style="color:black"> <ion-icon name="mail" item-start></ion-icon>Email</ion-label>
+      <ion-input type= "text" [(ngModel)]="email" >email</ion-input>
+    </ion-item>
+   <br> <br>
 
-     <button ion button (click)="reset()" id="dii"> Reset</button>
+ 
+   <button ion-button (click)="reset()" block >Reset</button>
 </ion-content>
+
